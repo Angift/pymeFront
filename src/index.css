@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.body { 
+  padding-top: 50px; 
+}
+#score {
+  padding-top: 0px;
+  top: 150px;
+  bottom:0; 
+  width: 100%; 
+  position: fixed; 
+  overflow: scroll;
+}
+.formcard {
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+  
+  /* This bit draws the box around it */
+  border:1px solid grey;
+
+  /* I've used padding so you can see the edges of the elements. */
+  padding:2px;
+}
+
+.inputcard {
+  /* Tell the input to use all the available space */
+  flex-grow:2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border:none;
+}
+
+.inputcard:focus {
+  /* removing the input focus blue box. Put this on the form if you like. */
+  outline: none;
+}
+
+.buttoncard {
+  /* Just a little styling to make it pretty */
+  border:1px solid blue;
+  background:blue;
+  color:white;
+}
+.hitcounter {
+	width: 100px;
+	height: 50px;	
+  background: whitesmoke;
+  border-style: ridge;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;   
+}
+.hitcounter .middle {
+  flex: 1;
+}
+.hitcounter .center {
+  flex: none;  
+  max-width: 50%;
+  justify-content: center;
+}
